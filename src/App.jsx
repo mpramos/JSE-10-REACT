@@ -7,6 +7,10 @@ import User from './User'
 import Array from './Array'
 import Skill from './Skill'
 import { Paises } from './Paises'
+import Contador from './Contador'
+import Pets from './Pets'
+import Formulario from './Formulario'
+import ListD from './ListD'
 
 
 const Edad =(props)=> <div>La persona tiene {props.edad} años</div>
@@ -57,13 +61,13 @@ function App() {
   
   return (
   <>
-  <ol>
+  {/* <ol>
   <Array numeros={[1,2,3,4]}/>
 
-  </ol>
-  <Edad edad={edad}></Edad>
-  <Peso peso={gravedad * masa}/>
-  <Estado estado={estado}/>
+  </ol> */}
+  {/* <Edad edad={edad}></Edad> */}
+  {/* <Peso peso={gravedad * masa}/> */}
+  {/* <Estado estado={estado}/> */}
   <Header dato={dato}/>
   <Principal tecnologia={techs} usuario={usuario}/>
   <Footer/>
@@ -71,11 +75,14 @@ function App() {
   <Boton texto='Ver la hora' onClick={()=>alert(new Date())} />
 <User firstName = 'juana' lastName='ramirez' country='peru'/>
   <Skills skills={skills}/>
-  <h2>Paises</h2>
+  {/* <h2>Paises</h2>
   <ul>
   <Paises paises={paises}/>
-
-  </ul>
+  </ul> */}
+  <Contador/>
+  <Pets/>
+  <Formulario/>
+  <ListD/>
   </>
   )
 }
