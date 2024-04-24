@@ -29,12 +29,15 @@ const showDate =(time)=>{
   return `${dia} ${mes} ${año}`
 }
 const Header = (props) => {
+  const dato= props.dato
+  const {bienvenida,titulo,subtitulo,autor,date} = dato
+  const {nombre, apellido} = autor
   return (
 <header style={headerStyles}>
-    <h1>{props.dato.bienvenida}</h1>
-    <h2>{props.dato.titulo}</h2>
-    <h3>{props.dato.subtitulo}</h3>
-    <p>{props.dato.autor.nombre} {props.dato.autor.apellido}</p>
+    <h1>{bienvenida}</h1>
+    <h2>{titulo}</h2>
+    <h3>{subtitulo}</h3>
+    <p>{nombre} {apellido}</p>
     <small>{showDate(props.dato.date)}</small>
 </header>
   )

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Techs = () => {
-  const techs =['HTML','CSS','JAVASCRIPT']
-  const techFormated = techs.map( tech=> <li key={tech}>{tech}</li>)
+const Techs = ({tecnologia}) => {
+ 
+  const techFormated = tecnologia.map( tech=> <li key={tech}>{tech}</li>)
   return (
     techFormated
   )

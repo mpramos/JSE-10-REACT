@@ -1,10 +1,11 @@
 import React from 'react'
 
-function UserCard() {
+function UserCard({usuario: {nombre,apellido,imagen}}) {
   return (
    <>
-   <img src={'https://rickandmortyapi.com/api/character/avatar/71.jpeg'} alt="" />
-   <h2>Evolutech Character</h2>
+   <img src={imagen} alt={imagen} />
+   <h2>{nombre}</h2>
+   <h2>{apellido}</h2>
    </>
   )
 }
